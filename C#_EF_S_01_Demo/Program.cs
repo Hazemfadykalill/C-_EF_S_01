@@ -1,10 +1,12 @@
-﻿namespace C__EF_S_01_Demo
+﻿using C__EF_S_01_Demo.Contexts;
+
+namespace C__EF_S_01_Demo
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            EnterpriseDbContext dbContext = new EnterpriseDbContext();
         }
     }
 }
