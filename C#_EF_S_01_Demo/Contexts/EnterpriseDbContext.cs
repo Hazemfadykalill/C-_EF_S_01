@@ -16,7 +16,7 @@ namespace C__EF_S_01_Demo.Contexts
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=Hazem;Database=Enterprise;Trusted-Connection=true");
+            optionsBuilder.UseSqlServer("Server=.;Database=Enterprise;Trusted_Connection=true;TrustServerCertificate=True;");
         }
         public DbSet<Employee> Employees { get; set; }//Become Table IN Database Named==>Employees
     }

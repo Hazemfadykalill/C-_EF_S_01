@@ -1,4 +1,5 @@
 ﻿using C__EF_S_01_Demo.Contexts;
+using Microsoft.EntityFrameworkCore;
 
 namespace C__EF_S_01_Demo
 {
@@ -7,6 +8,8 @@ namespace C__EF_S_01_Demo
         static void Main(string[] args)
         {
             EnterpriseDbContext dbContext = new EnterpriseDbContext();
+            //By Code
+           // dbContext.Database.Migrate();
         }
     }
 }
