@@ -19,5 +19,7 @@ namespace C__EF_S_01_Demo.Contexts
             optionsBuilder.UseSqlServer("Server=.;Database=Enterprise;Trusted_Connection=true;TrustServerCertificate=True;");
         }
         public DbSet<Employee> Employees { get; set; }//Become Table IN Database Named==>Employees
+        public DbSet<Department> Departments { get; set; }//Become Table IN Database Named==>Departments
+        public DbSet<Project> Projects { get; set; }//Become Table IN Database Named==>Departments
     }
 }
