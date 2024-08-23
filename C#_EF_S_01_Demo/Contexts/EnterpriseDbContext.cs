@@ -1,4 +1,5 @@
-﻿using C__EF_S_01_Demo.Entities;
+﻿using C__EF_S_01_Demo.Configuration;
+using C__EF_S_01_Demo.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -26,8 +27,8 @@ namespace C__EF_S_01_Demo.Contexts
 
 
         #region Fluent API
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
             #region Type (1)
             //modelBuilder.Entity<Employee>().HasKey(E => E.Id);//Primary Key Is Called Id
             //modelBuilder.Entity<Employee>().
@@ -71,7 +72,17 @@ namespace C__EF_S_01_Demo.Contexts
 
 
 
-        }
+       // }
+        #endregion
+
+        #region Configuration Class
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+
+        //    modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfiguration());
+
+        //}
+
         #endregion
     }
 }
