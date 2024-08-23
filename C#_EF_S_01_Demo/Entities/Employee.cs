@@ -29,6 +29,34 @@ namespace C__EF_S_01_Demo.Entities
     #endregion
 
     #region By Annotation
+    //public class Employee
+    //{
+    //    [Key]
+    //    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    //    public int Id { get; set; }
+    //    [Required]
+    //    [Column(TypeName = "varchar")]
+    //    //[MaxLength(50)]
+    //    [StringLength(50, MinimumLength = 10)]
+    //    public string? Name { get; set; }
+
+    //    //[Column(TypeName="Money")]
+    //    [DataType(DataType.Currency)]
+    //    public decimal Salary { get; set; }
+    //    [Range(22, 60)]
+    //    public int? Age { get; set; }
+    //    //[DataType(DataType.EmailAddress)]
+    //    [EmailAddress]
+    //    public string Email { get; set; }
+    //    [DataType(DataType.PhoneNumber)]
+    //    public string PhoneNumber { get; set; }
+    //    [DataType(DataType.Password)]
+    //    public string Password { get; set; }
+
+    //}
+    #endregion
+
+    #region Fluent API
     public class Employee
     {
         [Key]
