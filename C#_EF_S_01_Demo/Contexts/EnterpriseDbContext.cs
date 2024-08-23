@@ -29,59 +29,59 @@ namespace C__EF_S_01_Demo.Contexts
         #region Fluent API
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
-            #region Type (1)
-            //modelBuilder.Entity<Employee>().HasKey(E => E.Id);//Primary Key Is Called Id
-            //modelBuilder.Entity<Employee>().
-            //    //  Property(E=>E.Id).
-            //    //  Property("Id").
-            //    Property(nameof(Employee.Id)).
-            //    UseIdentityColumn(1, 1);//Add Constraint On Primary Key Is Called Id
+        #region Type (1)
+        //modelBuilder.Entity<Employee>().HasKey(E => E.Id);//Primary Key Is Called Id
+        //modelBuilder.Entity<Employee>().
+        //    //  Property(E=>E.Id).
+        //    //  Property("Id").
+        //    Property(nameof(Employee.Id)).
+        //    UseIdentityColumn(1, 1);//Add Constraint On Primary Key Is Called Id
 
-            //modelBuilder.Entity<Employee>().
-            //     Property(nameof(Employee.Name)).
-            //     HasColumnType("Varchar").
-            //     HasMaxLength(50).
-            //     HasDefaultValue("Ahmed");
+        //modelBuilder.Entity<Employee>().
+        //     Property(nameof(Employee.Name)).
+        //     HasColumnType("Varchar").
+        //     HasMaxLength(50).
+        //     HasDefaultValue("Ahmed");
 
-            //modelBuilder.Entity<Employee>().
-            //Property(nameof(Employee.Salary)).
-            //HasColumnType("Money"); 
-            #endregion
-            #region Type (2)
-            //modelBuilder.Entity<Employee>(E =>
-            //{
+        //modelBuilder.Entity<Employee>().
+        //Property(nameof(Employee.Salary)).
+        //HasColumnType("Money"); 
+        #endregion
+        #region Type (2)
+        //modelBuilder.Entity<Employee>(E =>
+        //{
 
-            //    E.HasKey(E => E.Id);//Primary Key Is Called Id
-            //    E.
-            //        //  Property(E=>E.Id).
-            //        //  Property("Id").
-            //        Property(nameof(Employee.Id)).
-            //        UseIdentityColumn(1, 1);//Add Constraint On Primary Key Is Called Id
+        //    E.HasKey(E => E.Id);//Primary Key Is Called Id
+        //    E.
+        //        //  Property(E=>E.Id).
+        //        //  Property("Id").
+        //        Property(nameof(Employee.Id)).
+        //        UseIdentityColumn(1, 1);//Add Constraint On Primary Key Is Called Id
 
-            //    E.
-            //         Property(nameof(Employee.Name)).
-            //         HasColumnType("Varchar").
-            //         HasMaxLength(50).
-            //         HasDefaultValue("Ahmed");
+        //    E.
+        //         Property(nameof(Employee.Name)).
+        //         HasColumnType("Varchar").
+        //         HasMaxLength(50).
+        //         HasDefaultValue("Ahmed");
 
-            //    E.
-            //    Property(nameof(Employee.Salary)).
-            //    HasColumnType("Money");
-            //});
-            #endregion
+        //    E.
+        //    Property(nameof(Employee.Salary)).
+        //    HasColumnType("Money");
+        //});
+        #endregion
 
 
 
-       // }
+        // }
         #endregion
 
         #region Configuration Class
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
 
-        //    modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfiguration());
-
-        //}
+            //modelBuilder.ApplyConfiguration<Employee>(new EmployeeConfiguration());
+            
+        }
 
         #endregion
     }
