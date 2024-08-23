@@ -7,9 +7,14 @@ namespace C__EF_S_01_Demo
     {
         static void Main(string[] args)
         {
+            #region By Instructor Eng / Alia
             EnterpriseDbContext dbContext = new EnterpriseDbContext();
             //By Code
-           // dbContext.Database.Migrate();
+            // dbContext.Database.Migrate(); 
+            #endregion
+
+
+
         }
     }
 }

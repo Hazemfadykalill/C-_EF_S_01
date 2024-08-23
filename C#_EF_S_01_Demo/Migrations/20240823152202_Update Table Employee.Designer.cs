@@ -4,6 +4,7 @@ using C__EF_S_01_Demo.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace C__EF_S_01_Demo.Migrations
 {
     [DbContext(typeof(EnterpriseDbContext))]
-    partial class EnterpriseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240823152202_Update Table Employee")]
+    partial class UpdateTableEmployee
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
